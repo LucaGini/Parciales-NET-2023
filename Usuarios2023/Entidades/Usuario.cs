@@ -37,8 +37,7 @@ namespace Gini.Entidades
         }
         public DateTime UltimoIngreso
         {
-            get { return _ultimoIngreso; }
-            set { _ultimoIngreso = value; }
+            get { return DateTime.Now; }
         }
 
         public Usuario()
@@ -47,7 +46,6 @@ namespace Gini.Entidades
             this._email = "";
             this._nombreUsuario = "";
             this._tipoUsuario = 0;
-            this._ultimoIngreso = DateTime.Now;
         }
 
         public Usuario(string clave, string email, string nombreUsuario, int tipoUsuario)
@@ -56,7 +54,6 @@ namespace Gini.Entidades
             this._email = email;
             this._nombreUsuario = nombreUsuario;
             this._tipoUsuario = tipoUsuario;
-            this._ultimoIngreso = DateTime.Now;
         }
     }
 }
